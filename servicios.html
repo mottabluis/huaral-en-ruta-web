@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Encuentra hospedaje, restaurantes, centros médicos y otros servicios en Huaral.">
+  <title>Servicios — Ruta Huaral</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Open+Sans:wdth,wght@75..100,300..800&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Ruta Huaral, inicio">
+      <img src="assets/logo-ruta-huaral.png" alt="Logo Ruta Huaral">
+    </a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a class="nav-sites" href="sitios.html">SITIOS</a>
+      <a class="nav-routes" href="rutas.html">RUTAS</a>
+      <a class="nav-services" href="servicios.html" aria-current="page">SERVICIOS</a>
+      <a class="nav-faq" href="faq.html">FAQ</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <h1 class="visually-hidden">Servicios en Huaral</h1>
+
+    <section class="services" aria-label="Servicios disponibles">
+      <button class="carousel-arrow carousel-prev" type="button" aria-label="Servicios anteriores">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4 7 12l8 8" /></svg>
+      </button>
+
+      <!-- Cada <li> es un servicio. Para agregar otro, copia un <li> completo. -->
+      <ul class="carousel-track" tabindex="-1">
+        <li class="service-item">
+          <a href="servicios/hospedaje.html">
+            <span class="service-name">HOSPEDAJE</span>
+            <img src="assets/servicio-hospedaje.jpg" alt="" loading="lazy">
+          </a>
+        </li>
+        <li class="service-item">
+          <a href="servicios/restaurantes.html">
+            <span class="service-name">RESTAURANTES</span>
+            <img src="assets/servicio-restaurantes.jpg" alt="" loading="lazy">
+          </a>
+        </li>
+        <li class="service-item">
+          <a href="servicios/centros-medicos.html">
+            <span class="service-name">CENTROS MÉDICOS</span>
+            <img src="assets/servicio-centros-medicos.jpg" alt="" loading="lazy">
+          </a>
+        </li>
+        <li class="service-item">
+          <a href="servicios/zonas-comerciales.html">
+            <span class="service-name">ZONAS COMERCIALES</span>
+            <img src="assets/servicio-zonas-comerciales.webp" alt="" loading="lazy">
+          </a>
+        </li>
+        <li class="service-item">
+          <a href="servicios/transporte.html">
+            <span class="service-name">TRANSPORTE</span>
+            <img src="assets/servicio-transporte.jpg" alt="" loading="lazy">
+          </a>
+        </li>
+        <li class="service-item">
+          <a href="servicios/bancos-y-cajeros.html">
+            <span class="service-name">BANCOS Y CAJEROS</span>
+            <img src="assets/servicio-bancos.jpg" alt="" loading="lazy">
+          </a>
+        </li>
+      </ul>
+
+      <button class="carousel-arrow carousel-next" type="button" aria-label="Más servicios">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 4 8 8-8 8" /></svg>
+      </button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
