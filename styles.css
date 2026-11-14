@@ -573,6 +573,47 @@ body {
     background-color: #efefef;
 }  
 
+/** BOTÓN "VER TODOS LOS SITIOS" **/
+
+/* Franja con el mismo fondo azul y el botón centrado */
+.all-sites {
+  padding: 0 24px 56px;
+  display: flex;
+  justify-content: center;
+  background: var(--hero-bg);
+}
+
+.all-sites-button {
+  display: inline-block;
+  padding: 0 25px;
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  font-family: "Special Gothic Expanded One", "Arial Narrow", sans-serif;
+  font-size: 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.all-sites-button:hover { background-color: #fff; }
+
+.all-sites-button:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+.all-sites-button:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 4px;
+}
+
 /****/
 
 
@@ -589,7 +630,5 @@ body {
   /* En pantallas pequeñas el mapa se ve mejor un poco más alto */
   .route-map iframe { aspect-ratio: 4 / 3; min-height: 0; }
   .route-link { justify-self: start; }
-  
-
-  
 }
+
